@@ -10,7 +10,7 @@ const Nav = () => {
     //width 100 so we can move the hamburger menu to the right side of the screen
     if (windowWidth === 'loading') return null
     return (
-    <>
+    <div className='z-10'>
       { windowWidth < 648 ? 
       <div className='fixed w-full'>
         <Hamburger />
@@ -34,7 +34,7 @@ const Nav = () => {
         </Link>
       </div>
     }
-    </>
+    </div>
   )
 }
 

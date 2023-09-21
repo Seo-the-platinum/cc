@@ -17,7 +17,7 @@ const Carousel = ({ children: slides }: Slides) => {
     },[curr])
 
   return (
-    <div className='overflow-hidden relative mb-14 md:mt-4 group p-0.5 sm:hover:scale-110 transition-hover duration-500 rounded max-w-2xl' id='projects'>
+    <div className='overflow-hidden relative mb-14 md:mt-4 p-0.5 sm:hover:scale-110 transition-hover duration-500 max-w-2xl'>
       <div
           className="flex transition-transform ease-out duration-1000"
           style={{ transform: `translateX(-${curr * 100}%)`}}
