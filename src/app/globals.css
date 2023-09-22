@@ -18,7 +18,10 @@
 
 @layer components {
   .page-container {
-    @apply flex flex-col mt-4 items-center;
+    @apply flex flex-col mt-4 items-center bg-background;
+  }
+  .page-container > h1 {
+    @apply font-bold text-3xl;
   }
 }
 html, body {
@@ -30,6 +33,5 @@ html, body {
 }
 
 body {
-  display: flex;
-  flex-direction: column;
+  @apply flex flex-col bg-background
 }
