@@ -16,15 +16,19 @@ export default function Home() {
   return (
     <main className="page-container">
       <h1>Church of Christ</h1>
-      <p className='text-red-800 italic'>
-        Come to Me, all you who labor and are heavy laden, 
-        and I will give you rest. Take My yoke upon you and learn from Me, 
-        for I am gentle and lowly in heart, and you will find rest for your souls.
-        For My yoke is easy and My burden light. <span className='text-black'>(Matthew 11:28-30)</span>
-      </p>
-      <Carousel>
-        {formattedSlides}
-      </Carousel>
+      <div className='flex flex-col w-full lg:items-start gap-4'>
+        <div className="flex lg:w-3/4 text-center self-center">
+          <p className='text-red-800 italic lg:text-lg'>
+            Come to Me, all you who labor and are heavy laden, 
+            and I will give you rest. Take My yoke upon you and learn from Me, 
+            for I am gentle and lowly in heart, and you will find rest for your souls.
+            For My yoke is easy and My burden light. <span className='text-black'>(Matthew 11:28-30)</span>
+          </p>
+        </div>
+        <Carousel>
+          {formattedSlides}
+        </Carousel>
+      </div>
       <div>
         <h1>Driving Directions</h1>
         <p>Come early to get a good parking spot!</p>
