@@ -4,27 +4,27 @@ import React, { useState } from 'react'
 import { GiHamburgerMenu } from 'react-icons/gi'
 
 const Hamburger = () => {
-    const [ open, setOpen ] = useState(false)
-    const toggle = () => {
-        setOpen((prev)=> !prev)
-    }
+  const [open, setOpen] = useState(false)
+  const toggle = () => {
+    setOpen((prev) => !prev)
+  }
   return (
     <div className={`${open ? 'translate-x-1/4' : 'translate-x-full'} transform-translate duration-500 ease-in-out absolute right-0`}>
       <div className='flex items-start'>
         <button className='absolute right-full' onClick={toggle}>
-            <GiHamburgerMenu className='fill-emerald-400' size='2rem'/>
+          <GiHamburgerMenu className='fill-black' size='2rem' />
         </button>
-        <div className='bg-emerald-500 flex flex-col w-4/5 min-h-screen'>
-          <Link href='/' onClick={toggle}>
+        <div className='bg-black flex flex-col w-4/5 min-h-screen text-white text-lg gap-4'>
+          <Link className='pl-4' href='/' onClick={toggle}>
             Home
           </Link>
-          <Link href='/contact' onClick={toggle}>
+          <Link className='pl-4' href='/contact' onClick={toggle}>
             Contact
           </Link>
-          <Link href='/about' onClick={toggle}>
+          <Link className='pl-4' href='/about' onClick={toggle}>
             About
           </Link>
-          <Link href='/meet' onClick={toggle}>
+          <Link className='pl-4' href='/meet' onClick={toggle}>
             Meet the Congregation
           </Link>
         </div>

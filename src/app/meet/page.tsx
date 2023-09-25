@@ -8,12 +8,12 @@ const Meet = () => {
     <div className='page-container'>
       <h1>Meet the Congregants</h1>
       <div className='flex border-red-500 border-2'>
-        <Image 
+        <Image
           alt='Photo of church of christ congregant'
           className=' w-full'
           priority
           sizes='(min-width: 1280px) 60vw, 80vw'
-          src={congregants}/>
+          src={congregants} />
       </div>
     </div>
   )
